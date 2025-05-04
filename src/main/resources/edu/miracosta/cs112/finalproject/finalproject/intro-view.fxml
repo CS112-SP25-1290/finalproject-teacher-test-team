@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.miracosta.cs112.finalproject.finalproject.HelloController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="51.0" layoutY="14.0" prefHeight="36.0" prefWidth="198.0" text="World Brain Test" wrapText="true">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="250.0" fitWidth="250.0" layoutX="25.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/Earth_Western_Hemisphere_transparent_background.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="100.0" layoutY="326.0" mnemonicParsing="false" onAction="#handleTakeQuizButton" prefHeight="25.0" prefWidth="100.0" text="Take Quiz" />
+      <Button layoutX="100.0" layoutY="361.0" mnemonicParsing="false" onAction="#handleExitButton" prefHeight="25.0" prefWidth="100.0" text="Exit" />
+   </children>
+</Pane>
