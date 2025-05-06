@@ -6,13 +6,16 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 public class HelloController {
     @FXML
     private Label welcomeText;
     @FXML
-    Label titleLabel
+    Label titleLabel;
+    @FXML
+    ImageView imageLabel;
 
     @FXML
     protected void onHelloButtonClick() {
