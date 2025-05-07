@@ -24,11 +24,6 @@ public class HelloController {
     @FXML
     Button takeQuizButton;
 
-    @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
-    }
-
     public void initialize() {
         titleLabel.setText("World Brain Test");
         Image image = new Image(EARTH_IMAGE_PATH);
