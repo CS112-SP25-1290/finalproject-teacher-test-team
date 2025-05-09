@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.miracosta.cs112.finalproject.finalproject">
+   <children>
+      <Button layoutX="100.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleStartTheQuizButton" prefHeight="25.0" prefWidth="100.0" text="Start the Quiz" />
+      <Text fx:id="instructionsText" layoutX="60.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="instructionsText" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="10.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please don't rush answering the question, please read the question, than choose your desired answer. The progress bar will track on how far you progress so far on your quiz." textAlignment="CENTER" wrappingWidth="280.5550537109375">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
