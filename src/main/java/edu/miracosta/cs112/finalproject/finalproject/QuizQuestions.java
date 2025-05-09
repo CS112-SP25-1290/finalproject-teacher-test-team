@@ -35,7 +35,7 @@ public class QuizQuestions {
         }
     }
     //Mutators or Setters
-    public boolean setImageName() {
+    public boolean setImageName(String imageName) {
         if(imageName != null) {
             this.imageName = imageName;
             return true;
@@ -44,8 +44,8 @@ public class QuizQuestions {
             return false;
         }
     }
-    public boolean setQuestionNumber() {
-        if(questionNumber != null) {
+    public boolean setQuestionNumber(int questionNumber) {
+        if(questionNumber != 0) {
             this.questionNumber = questionNumber;
             return true;
         }
@@ -53,7 +53,7 @@ public class QuizQuestions {
             return false;
         }
     }
-    public boolean setQuestionText() {
+    public boolean setQuestionText(String questionText) {
         if(questionText != null) {
             this.questionText = questionText;
             return true;
@@ -62,7 +62,7 @@ public class QuizQuestions {
             return false;
         }
     }
-    public boolean setAnswerText() {
+    public boolean setAnswerText(String answerText) {
         if(answerText != null) {
             this.answerText = answerText;
             return true;
@@ -91,7 +91,7 @@ public class QuizQuestions {
     }
 
     public boolean setAll(String imageName, int questionNumber, String questionText, String answerText) {
-        return (this.setImageName(imageName), this.setQuestionNumber(questionNumber), this.setQuestionText(questionText), this.setAnswerText(answerText));
+        return (this.setImageName(imageName) && this.setQuestionNumber(questionNumber) && this.setQuestionText(questionText) && this.setAnswerText(answerText));
     }
 
     public String toString() {

@@ -10,6 +10,15 @@ public class MultipleChoiceQuestion extends QuizQuestions {
     private char answerB;
     private char answerC;
     private char answerD;
+    /*
+    ArrayList<Questions> generalAll() {
+        ArrayList<Questions> questions = new ArrayList<>();
+        questions.add(new Questions());
+        return questions;
 
+        Random random = new Random();
+        random.nextInt(questions.size());
+        questions.length();
 
+     */
 }

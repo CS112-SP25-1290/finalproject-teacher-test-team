@@ -1,3 +1,5 @@
+//UML and Wireframe Link: https://docs.google.com/presentation/d/10_Xnzbg1E8QiCMgOdU1wT2dW8AVvZGlc1dPDdKulsDM/edit?usp=sharing
+
 package edu.miracosta.cs112.finalproject.finalproject;
 
 import javafx.event.ActionEvent;
@@ -18,16 +20,14 @@ public class HelloController {
     @FXML
     private Label welcomeText;
     @FXML
-    Label titleLabel;
+    Label programName;
     @FXML
-    ImageView imageLabel;
-    @FXML
-    Button takeQuizButton;
+    ImageView earthImage;
 
     public void initialize() {
-        titleLabel.setText("World Brain Test");
+        programName.setText("World Brain Test");
         Image image = new Image(EARTH_IMAGE_PATH);
-        imageLabel.setImage(image);
+        earthImage.setImage(image);
     }
 
     @FXML
@@ -37,8 +37,8 @@ public class HelloController {
 
     @FXML
     public void handleTakeQuizButton() throws IOException {
-        Stage stage = (Stage) titleLabel.getScene().getWindow();
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(FULL_NAME_VIEW_RESOURCE));
+        Stage stage = (Stage) programName.getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(YOUR_NAME_VIEW_RESOURCE));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.setTitle(MAIN_PROGRAM_TITLE);
